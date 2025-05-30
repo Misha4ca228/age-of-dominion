@@ -1,0 +1,14 @@
+{
+    "ISR": {
+        "name": "Израиль",
+        "flag": "israel.png",
+        "color": [102, 178, 255],
+        "money": 15000
+    },
+    "EGY": {
+        "name": "Египет",
+        "flag": "egypt.png",
+        "color": [255, 153, 51],
+        "money": 5000
+    }
+}

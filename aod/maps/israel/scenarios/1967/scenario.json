@@ -1,0 +1,12 @@
+{
+  "name": "Израиль - 1973",
+  "start_year": 1973,
+  "participants": {
+    "ISR": {
+      "controlled_regions": [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    },
+    "EGY": {
+      "controlled_regions": [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    }
+  }
+}
