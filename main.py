@@ -7,8 +7,11 @@ from aod.ui.map import draw_map, handle_map_click
 from aod.ui.province_info import render_province_info
 from aod.ui.select_country import select_country_screen
 from aod.ui.select_scenarios import  select_scenarios_screen
+from aod.utils.music import play_random_track
 
 pygame.init()
+pygame.mixer.init()
+
 screen = pygame.display.set_mode((1100, 800))
 pygame.display.set_caption("Menu and Simple Game Example")
 clock = pygame.time.Clock()
@@ -73,6 +76,9 @@ while running:
     elif state.state == "select_country":
         select_country_screen(events, screen, font, background_image)
 
+    if not pygame.mixer.music.get_busy():
+        play_random_track()
+
 
 
 
@@ -80,5 +86,6 @@ while running:
     clock.tick(60)
 
 pygame.quit()
+pygame.mixer.music.stop()
 sys.exit()
 
